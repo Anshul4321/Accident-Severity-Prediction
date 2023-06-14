@@ -1,0 +1,40 @@
+<body style="background-color:rgb(255,0,0);">
+    <div class="login">
+        <h1>ACCIDENT SEVERITY PREDICTION</h1>
+        <form action="{{url_for('predict')}}"method="post">
+            <input type="text" name="1st_Road_Class	" placeholder="1st_Road_Class" required="required" style="background-color: aqua;"/><br>
+            <br><br>
+            <input type="text" name="Carriageway_Hazards" placeholder="Carriageway_Hazards" required="required" style="background-color: aqua;"/><br>
+            <br><br>
+            <input type="text" name="Junction_Control" placeholder="Junction_Control" required="required" style="background-color: aqua;"/><br>
+            <br><br>
+            <input type="text" name="Day_of_Week" placeholder="Day_of_Week" required="required" style="background-color: aqua;"/><br>
+            <br><br>
+            <input type="text" name="Junction_Detail" placeholder="Junction_Detail" required="required" style="background-color: aqua;"/><br>
+            <br><br>
+            <input type="text" name="Light_Conditions" placeholder="Light_Conditions" required="required" style="background-color: aqua;"/><br>
+            <br><br>
+            <input type="text" name="Road_Surface_Conditions" placeholder="Road_Surface_Conditions" required="required" style="background-color: aqua;"/><br>
+            <br><br>
+            <input type="text" name="Road_Type" placeholder="Road_Type" required="required" style="background-color: aqua;"/><br>
+            <br><br>
+            <input type="text" name="Special_Conditions_at_Site" placeholder="Special_Conditions_at_Site" required="required" style="background-color: aqua;"/><br>
+            <br><br>
+            <input type="text" name="Speed_limit" placeholder="Speed_limit" required="required" style="background-color: aqua;"/><br>
+            <br><br>
+            <input type="text" name="Time" placeholder="Time" required="required" style="background-color: aqua;"/><br>
+            <br><br>
+            <input type="text" name="Urban_or_Rural_Area" placeholder="Urban_or_Rural_Area" required="required" style="background-color: aqua;"/><br>
+            <br><br>
+            <input type="text" name="Weather_Conditions" placeholder="Weather_Conditions" required="required" style="background-color: aqua;"/><br>
+            <br><br>
+            
+
+            <button type="submit" class="btn btn-primary btn-block btn-large" style="background-color: blue;">PREDICT</button>
+        </form>
+        <br>
+        <br>
+
+    </div>
+    {{prediction_text}}
+</body>
